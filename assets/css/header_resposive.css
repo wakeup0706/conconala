@@ -1,0 +1,200 @@
+@media only screen and (max-width: 1250px) {
+    body{
+        padding: 0px;
+    }
+    header{
+        width: calc(100%);
+        padding: 0px 28px 0px 0px;
+        margin-left: 0px;
+    }
+    header ul{
+        width: 65%;
+    }
+    .header-logo{
+        width:180px;
+    }
+    .mission p{
+        font-size: 45px;
+    }
+    .firstview-bg{
+        width: 100%;
+        position: absolute;
+        /* opacity: 0.6;     */
+        transform: translateY(-30%) translateX(-58px) ;
+        /* top: -50%; */
+        z-index: 0;
+    }
+    .contact-info-img p{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        transform: translateY(-230%) translateX(50px);
+    }
+    .service-card-full{
+        padding: 60px 60px 96px 60px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .mission p{
+        font-size: 40px;
+    }
+    header ul li a{
+        font-size: 17px;
+    }
+    .header-container{
+        width: 100%;
+    }
+}
+/* @media only screen and (max-width: 1050px) {
+    .mission p{
+        font-size: 35px;
+    }
+} */
+@media only screen and (max-width: 1000px) {
+    header{
+        padding: 0px 28px;
+    }
+    .mission p{
+        font-size: 30px;
+    }
+    .mission{
+        transform: translateY(-211%);
+    }
+    header ul{
+        display: none;
+    }
+    .top-lan{
+        display: none;
+    }
+    .header-logo{
+        width:169px;
+    }
+    .hamburger-btn{
+        display: flex;
+    }
+    .overlay{
+        display: block;
+    }
+}
+@media only screen and (max-width: 850px) {
+   .service{
+    transform: translateY(23%);
+   }
+}
+@media only screen and (max-width: 768px) {
+    .hamburger-btn{
+        width: 45px;
+        height: 45px;
+        
+    }        
+/* .mission p{
+        font-size: 30px;
+    } */
+}
+@media only screen and (max-width:1000px) {
+    .mission{
+        font-size: 34px;
+        font-weight: bold;
+        /* transform: translateY(-50%); */
+        text-align: center;
+    }
+    .service-content{
+        width: 100%;
+        padding: 0px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-sub-container{
+    flex-direction: column;
+    align-items: center;
+    }
+    .service-half-content-description{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-content-half{
+        width: 100%;
+    }
+    .service-card-full{
+        padding-bottom: 0px;
+    }
+    .service-card-half {
+        width: 78%;
+    }
+}
+@media only screen and (max-width:900px) {
+    .mission{
+        font-size: 30px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+}
+@media only screen and (max-width:850px) {
+    .mission{
+        font-size: 28px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+}
+@media only screen and (max-width:782px) {
+    .mission{
+        font-size: 26px;
+        font-weight: bold;
+        transform: translateY(-60%);
+        text-align: center;
+    }
+    .tab-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+    
+      }
+      .news-item{
+        flex-direction: column;
+        gap: 10px;
+      }
+      .news-text{
+        width: 100%;
+      }
+    /* .mission{
+        font-size: 34px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        text-align: center;
+    } */
+}
+@media only screen and (max-width:800px) {
+    .mission{
+        font-size: 26px;
+        font-weight: bold;
+        /* transform: translateY(-50%); */
+        text-align: center;
+    }
+    .mission_cut{
+        display: block;
+    }
+}
+@media only screen and (max-width:782px) {
+    .mission{
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mission_cut{
+        display: block;
+    }
+}
+@media only screen and (max-width:560px) {
+    .mission{
+        font-size: 26px;
+        font-weight: bold;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+    .mission_cut{
+        display: block;
+    }
+}

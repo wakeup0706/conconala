@@ -1,0 +1,19 @@
+.d-flex{
+    display: flex;
+}
+.w-full{
+    width: 100%;
+}
+.j-between{
+    justify-content: space-between
+}
+.j-around{
+    justify-content: space-around;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.j-start{
+    justify-content: flex-start;
+}
