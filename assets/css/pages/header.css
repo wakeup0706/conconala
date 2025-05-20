@@ -1,33 +1,32 @@
-header{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 30px;
-    margin: auto;
-    align-items: center;
-    z-index: 1000;
-    /* margin-left: 58px; */
-    padding: 0 58px;
+.spaceHeader{
+    height: 30px;
 }
-.header-container{
-    margin: auto;
+.header{
     width: 100%;
+    z-index: 100;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+}
+.header-content{
+    width: 100%;
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding:0px 30px;
+    padding: 0px 30px;
+    border-radius: 6px;
 }
-header ul{
+.top-nav{
     display: flex;
     justify-content: space-between;
     align-items: start;
     gap: 10px;
     width: 60%;
 }
-header ul li{
+.top-nav li{
     list-style: none;
     gap: 10px;
     display: flex;
@@ -35,27 +34,51 @@ header ul li{
     align-items: start;
     position: relative;
 }
-header>ul li img{
+.top-nav li img{
     width: 14px;
     height: 9px;
     border-radius: 50%;
 }
-header>div >ul>li a{
+.top-nav li a{
     color: #3B4043;
     font-size: 16px;
     font-weight: bold;
     line-height: 14px;
 }
-
-header>div>ul>li a:hover{
+.top-nav li a:hover{
     color: #00A38D;
     cursor: pointer;
 }
-header>ul>li a:hover{
+.top-nav li a:hover{
     color: #00A38D;
 }
-header>div>ul>li:hover .top-nav-submenu{
+.top-nav li:hover .top-nav-submenu{
     display: block;
+}
+.top-nav-submenu{
+    width: 280px;
+    height: auto;
+    padding: 32px;
+    background-color: #fff;
+    position: absolute;
+    top: 16px;
+    padding-top: 40px;
+    display: none;
+}
+.top-nav-submenu ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-nav-submenu ul li{
+    width: 100%;
+    gap: 24px !important;
+}
+.top-nav-submenu   ul li a{
+    color: #323232;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }
 .top-lan{
     display: flex;
@@ -81,35 +104,8 @@ header>div>ul>li:hover .top-nav-submenu{
     content: '';
     width: 1px;
     height: 14px;
-    /* background-color: red; */
 }
-.top-nav-submenu{
-    width: 320px;
-    height: auto;
-    padding: 32PX;
-    background-color: #fff;
-    position: absolute;
-    top: 16px;
-    padding-top: 70px;
-    left: -32px;
-    display: none;
-}
-.top-nav-submenu ul{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.top-nav-submenu ul li{
-    width: 100%;
-    gap: 22px !important;
-}
-.top-nav-submenu   ul li a{
-    color: #3B4043;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 14px;
-    text-decoration: none;
-}
+/* ================ */
 .hamburger-btn{
     width: 49px;
     height: 49px;
@@ -130,12 +126,6 @@ header>div>ul>li:hover .top-nav-submenu{
 .hamburger-menu-logo{
     width: 169px;
 }
-/* .hamburger-menu-close{
-    width: 49px;
-    height: 49px;
-    background-color: #fff;
-} */
-
 .overlay {
     height: 100%;
     width: 0;
@@ -147,9 +137,8 @@ header>div>ul>li:hover .top-nav-submenu{
     overflow-x: hidden;
     transition: 0.5s;
     display: none;
-  }
-  
-  .overlay-content {
+}
+.overlay-content{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -157,56 +146,38 @@ header>div>ul>li:hover .top-nav-submenu{
     height: 100%;
     text-align: center;
     padding: 15px 28px 28px 28px;
-  }
-  
-
-  
-  .overlay a:hover, .overlay a:focus {
+}
+.overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
+}
+.overlay .closebtn {
     position: absolute;
     text-decoration: none;
     font-size: 60px;
     font-weight: 50;
     color: #fff;
-  }
-
-
-  .arrow-icon {
+}
+.arrow-icon {
     transition: transform 0.3s ease;
-  }
-  
-  .arrow-icon.rotated {
+}
+
+.arrow-icon.rotated {
     transform: rotate(180deg);
-  }
-  
-  /* Optional: For showing/hiding content */
-  .collapssible-cotent {
+}
+
+/* Optional: For showing/hiding content */
+.collapssible-cotent {
     display: none;
     padding-left: 20px;
-  }
-  
-  .collapssible-cotent.show {
-    display: block;
-  }
-  
+}
 
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
+.collapssible-cotent.show {
+    display: block;
+}
 .hamburger-content{
     width: 90%;
     padding-bottom: 0px 10px 20px 10px;
     margin: auto;
-    /* align-items: center; */
 }
 .collapsible-items{
     width: 90%;
@@ -216,7 +187,6 @@ header>div>ul>li:hover .top-nav-submenu{
     cursor: pointer;
     margin: auto;
     margin-top: 20px;
-
 }
 .collasible-items-title {
     font-size: 14px;
@@ -248,11 +218,6 @@ width: 100%;
     font-size: 14px;
     font-weight: blod;
 }
-  /* .collapsible>div{
-    width: 14px;
-    height: 9px;
-  } */
-
   .collapsible-items ul {
     max-height: 0;
     overflow: hidden;
@@ -289,9 +254,8 @@ width: 100%;
 .hamburger-footer{
     width: 100%;
     display: flex;
-    /* justify-content: flex-start; */
     gap: 20px;
-    margin-top: 20px                    ;
+    margin-top: 20px;
 }
 .hamburger-footer :nth-child(1){
     max-width: 150px;
@@ -301,4 +265,49 @@ width: 100%;
 .hamburger-footer :nth-child(2){
     max-width: 130px;
     width: fit-content;
+}
+.download{
+    width: fit-content;
+  }
+@media only screen and (max-width: 1250px) {
+    .header{
+        top: 0;
+        width: 100%;
+    }
+    .header-content .top-nav{
+        display: none;
+    }
+    .header-content .top-lan{
+        display: none;
+    }
+    .hamburger-btn{
+        display: flex;
+    }
+    .header-logo{
+        width:180px;
+    }
+    .overlay{
+        display: block;
+    }
+    .spaceHeader{
+        height: 0;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    header ul li a{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .header-logo{
+        width:169px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
 }

@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "NotoSansJP";
+    src: url("./fonts/NotoSansJP-VariableFont_wght.ttf");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}
+body {
+    background:
+      linear-gradient(220deg, rgba(226, 249, 251, 0.8), rgb(255 0 0 / 0%) 70.71%),
+      linear-gradient(127deg, rgba(250, 238, 255, 0.8), rgb(0 255 0 / 0%) 70.71%),
+      linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 90%);
+  }
+.container{
+    max-width: 1800px;
+    margin-inline: auto;
+}
+.CTA-button-section{
+    width: calc(100%);
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.tab-container .CTAbtn{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btn-ico{
+    position:absolute;
+    width: 20px;
+    right: 20px;
+}
+.CTAbtn:hover{
+    background-color: #07cab0;
+}
+.w-full{
+    width: 100%;
+}
+.CTAbtn{
+    background-color: #00A38D;
+     max-width: 286px;
+     align-items: center;
+     justify-content: center;
+     height: 55px;
+     display: flex;
+     border: 0px;
+     border-radius: 5px;
+     padding:    16px 113px 16px 9px;
+     font-size: 16px;
+     color: #fff;
+     font-weight: bold;
+     position: relative;
+     margin-bottom: 50px;
+ }
+ .CTAbtn a{
+     text-decoration: none;
+     font-size: 16px;
+     color: #fff;
+     font-weight: bold;
+     position: relative;
+     transform: translateX(40px);
+}
+@media only screen and (max-width:1000px) {
+    .CTA-button-section {
+      width: calc(100%);
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+}
