@@ -18,7 +18,7 @@ img{
 body {
     background:
       linear-gradient(220deg, rgba(226, 249, 251, 0.8), rgb(255 0 0 / 0%) 70.71%),
-      linear-gradient(127deg, rgba(250, 238, 255, 0.8), rgb(0 255 0 / 0%) 70.71%),
+      linear-gradient(127deg, rgba(223, 179, 242, 0.8), rgb(0 255 0 / 0%) 70.71%),
       linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 90%);
   }
 .container{
