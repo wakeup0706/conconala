@@ -157,6 +157,7 @@
     flex-direction: column;
     margin: auto;
     padding: 60px 60px 96px 60px;
+    background-color: #cbcbcb2a;
 }
 
 .service-card-title{
@@ -200,6 +201,7 @@
 .service-card-half{
     width: 50%;
     margin-top:30px;
+    background-color: #cbcbcb2a;
 }
 .service-content-half{
     width: 100%;
