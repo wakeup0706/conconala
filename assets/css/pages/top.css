@@ -285,8 +285,9 @@
 
 /* ===========recruit================= */
 .recruit{
-    background-color: #fff;
+    background-color: #cbcbcb2a;
     padding-top: 80px;
+    padding-block: 100px;
 }
 .ir-info{
     width: 100%;

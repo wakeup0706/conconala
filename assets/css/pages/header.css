@@ -1,3 +1,6 @@
+.topBack{
+    background: linear-gradient(111deg, rgba(255, 223, 238, 255) 0%, rgb(255, 223, 238) 21%, rgb(176, 215, 245) 57%, rgb(0, 163, 142) 100%);
+}
 .spaceHeader{
     height: 30px;
 }

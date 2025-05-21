@@ -10,13 +10,11 @@
 body, html{
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, rgb(249 250 251 / 54%) 0%, rgb(243 243 243 243 / 89%) 62%, rgb(249, 250, 251) 82%, rgb(249, 250, 251) 100%);
 }
 img{
     height: auto;
     max-width: 100%;
-}
-body {
-    background: linear-gradient(111deg, rgba(255, 223, 238, 255) 0%, rgb(255, 223, 238) 21%, rgb(176, 215, 245) 57%, rgb(0, 163, 142) 100%);
 }
 .container{
     max-width: 1800px;
