@@ -37,7 +37,7 @@
                                  <a href="#">ビジョン・ミッション    </a>
                                  <a href="#">代表挨拶  </a>
                                  <a href="#">役員紹介  </a>
-                                 <a href="#">会社概要  </a>
+                                 <a href="./aboutUs.html">会社概要  </a>
                              </li>
                          </ul>
                      </div>
@@ -542,20 +542,20 @@
     <script src="./assets/js/top.js"></script>
     <script>
         function openNav() {
-          document.getElementById("myNav").style.width = "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("myNav").style.width = "0%";
-        }
-        const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      // Add logic to filter or show different tab content here
-    });
-  });
-        </script>
+            document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            // Add logic to filter or show different tab content here
+            });
+        });
+    </script>
 </body>
 </html>

@@ -65,6 +65,8 @@
     top: 16px;
     padding-top: 40px;
     display: none;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .top-nav-submenu ul{
     width: 100%;

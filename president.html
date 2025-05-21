@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>coconala.com</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/pages/header.css">
+        <link rel="stylesheet" href="./assets/css/custom_style.css">
+        <link rel="stylesheet" href="./assets/css/pages/president.css">
+    </head> 
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="./assets/img/coconala_logo_b_yoko_color_eng.png" alt="Coconala Logo">
+                </div>
+                <ul class="top-nav">
+                    <li>
+                        <div>
+                            <a>企業情報</a>
+                            <img src="./assets/img/Icon - ArrowDown - Small.png" alt="">
+                        </div>
+                        <div class="top-nav-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">ビジョン・ミッション    </a>
+                                    <a href="#">代表挨拶  </a>
+                                    <a href="#">役員紹介  </a>
+                                    <a href="#">会社概要  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a>サービス</a>
+                            <img src="./assets/img/Icon - ArrowDown - Small.png" alt="">
+                        </div>
+                        <div class="top-nav-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">マーケットプレイス事業    </a>
+                                    <a href="#">エージェント事業  </a>
+                                    <a href="#">SaaS  </a>
+                                    <a href="#">ココナラ経済圏  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a>ニュース
+                            </a>
+                            <img src="./assets/img/Icon - ArrowDown - Small.png" alt="">
+                        </div>
+                        <div class="top-nav-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">プレスリリース    </a>
+                                    <a href="#">お知らせ  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a>ニュース
+                            </a>
+                            <img src="./assets/img/Icon - ArrowDown - Small.png" alt="">
+                        </div>
+                        <div class="top-nav-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">IRニュース    </a>
+                                    <a href="#">株主・投資家の皆様へ  </a>
+                                    <a href="#">IRライブラリー  </a>
+                                    <a href="#">IRカレンダー  </a>
+                                    <a href="#">株式について  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a>サステナビリティ</a>
+                            <img src="./assets/img/Icon - ArrowDown - Small.png" alt="">
+                        </div>
+                        <div class="top-nav-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#">サステナビリティ    </a>
+                                    <a href="#">環境  </a>
+                                    <a href="#">社会  </a>
+                                    <a href="#">ガバナンス  </a>
+                                    <a href="#">ESGデータ  </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a>採用情報</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="top-lan">
+                    <a href="#">日本語</a>
+                    <span>
+                        |
+                    </span>
+                    <a href="#">EN</a>
+                </div>
+                <div class="hamburger-btn">
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                </div>
+
+                <div id="myNav" class="overlay">
+                    <div class="overlay-content">
+                        <div class="hamburger-menu-top">
+                            <div class="hamburger-menu-logo">
+                                <img src="./assets/img/coconala_logo_b_yoko_color_eng.png" alt="">
+                            </div>
+                            <div class="hamburger-btn">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            </div>
+                        </div>
+                        <div class="hamburger-content flex-col" >
+                            <div class="collapsible flex-col">
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>ホーム</p>
+                                    </div>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>企業情報</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                    <ul class="collapssible-cotent">
+                                        <li>
+                                            <a href="#">ビジョン・ミッション    </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">代表挨拶  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">役員紹介  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">会社概要  </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>サービス</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                    <ul class="collapssible-cotent">
+                                        <li>
+                                            <a href="#">マーケットプレイス事業    </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">エージェント事業  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">SaaS  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ココナラ経済圏  </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>ニュース</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                    <ul class="collapssible-cotent">
+                                        <li>
+                                            <a href="#">プレスリリース    </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">お知らせ  </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>IR情報</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                    <ul class="collapssible-cotent">
+                                        <li>
+                                            <a href="#">IRニュース    </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">株主・投資家の皆様へ  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IRライブラリー  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IRカレンダー  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">株式について  </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>サスティナビリティ</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                    <ul class="collapssible-cotent">
+                                        <li>
+                                            <a href="#">サステナビリティ    </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">環境  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">社会  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ガバナンス  </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ESGデータ  </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>オウンドメディア</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>採用情報</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="collapsible-items">
+                                    <div class="collasible-items-title d-flex j-between w-full">
+                                        <p>お問い合わせ</p>
+                                        <div><img src="./assets/img/Icon - ArrowUp - Small.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="hamburger-lan">
+                                    <a href="#">日本語</a>
+                                    <span>
+                                        |
+                                    </span>
+                                    <a href="#">EN</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="han">
+
+                        </div>
+                    </div>
+
+                    </div>
+            </div>
+            </div>
+        </header>
+        <section class="firstview">
+            <div class="firstview-slide">
+                <div class="firstview-slide-img">
+                    <img src="./assets/img/AdobeStock_206582313.png" style="width: 100%;" alt="">
+                    <div class="mission">
+                        <p>CORPORATE INFORMATION <br>企業情報</p>
+        
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+        <section class="tab-section">
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tab active">ビジョン・ミッション</div>
+                    <div class="tab">代表挨拶</div>
+                    <div class="tab">役員紹介</div>
+                    <div class="tab">会社概要</div>
+                </div>
+                <div class="tab-content">
+                    <p class="tab-content-title">代表挨拶</p>
+                    <div class="tab-content-center">
+                        <div class="content-img">
+                            <img src="./assets/img/images.png" alt="">
+                            <p>↑ここはテキストが通過されるまで画像が</p>
+                            <p>固定されるアニメーションスクロールを想定</p>
+                        </div>
+                        <div class="content-text">
+                            <p class="content-text-title">鈴木 歩</p>
+                            <p class="content-text-title-detail">代表取締役社長CEO</p>
+                            <div class="content-text-detail">
+                                <p class="text-title">あらゆる人の可能性を解き放ち<br>社会との繋がり方の選択肢を増やす</p>
+                                <p class="text-detail">ココナラはスキルのマッチングプラットフォームとして、あらゆる人が活躍できる仕組みを創出します。そのためにココナラが大切にしていることをいくつかご紹介します。<br><br><br>
+                                    第1に、「あらゆる人に機会を」。私たちはすべての人が、意志さえあればいつでも社会とつながり、活躍できる世の中にしていきたいと考えています。ココナラは、プロからアマチュアまで全てのスキル提供者を、そしてプライベート利用からビジネス利用まで全てのスキルの享受者を含む、あらゆる人を見据えた価値提供にこだわります。<br><br><br>
+                                    第2に、「制約からの解放」。住んでいる場所や活動できる時間、あるいは定年・結婚・出産・独立といった環境の変化など、人は生きていく上で様々な制約に直面します。しかしながら、機会さえあれば、そして多様な価値観を持つ人とのつながりさえあれば、人は誰でも自分らしく自由に活動することができると考えています。私たちは、個の可能性を信じ、こういった一切の制約をテクノロジーの力で取り除いていきます。<br><br><br>
+                                    最後に、「フェアな取引の実現」。オンラインで様々なマッチングが成立する中で、時として個々人が持っている情報やリテラシーの差が原因で、フェアな取引が阻害されることがあります。しかしながら私たちは、どのような取引においても安心してご利用いただける仕組み作りにこだわります。ココナラは、情報の可視化やサポートを通じ、誰でも簡単に必要な情報を得られ、対等なやり取りができる場を構築していきます。<br><br><br>
+                                    世の中は、個人と社会のつながり方が多様化し、より自由に、より自分らしく生きていけるようになりつつあります。そんな中、ココナラは一人ひとりのストーリーを演出するパートナーになれるよう、これからもあらゆる人の可能性をどこまでも信じ、応援し続けます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-l">
+                <div class="footer-logo">
+                    <img src="./assets/img/coconala_logo_b_yoko_color_eng.png" alt="">
+                </div>
+                <div class="footer-link">
+                        <div>
+                            <img src="./assets/img/btn_app_store.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./assets/img/btn_google_play.png" alt="">
+                        </div>
+                </div>
+
+            </div>
+            <div class="footer-r">
+                <div class="footer-r-1">
+                    <a href="">企業情報</a>
+                    <a href="">サービス</a>
+                    <a href="">ニュース</a>
+                    <a href="">IR情報</a>
+                </div>
+                <div class="footer-r-1">
+                    <a href="">サスティナビリティ</a>
+                    <a href="">オウンドメディア</a>
+                    <a href="">採用情報</a>
+                    <a href="">お問い合わせ</a>
+                </div>
+            </div>
+        </footer>
+        <script src="./assets/js/top.js"></script>
+        <script src="./assets/js/scroll.js"></script>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                });
+            });
+        </script>
+    </body>
+</html>
